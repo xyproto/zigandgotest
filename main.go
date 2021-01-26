@@ -1,6 +1,6 @@
 package main
 
-// #cgo LDFLAGS: -ladd -L.
+// #cgo LDFLAGS: -L${SRCDIR}/lib -ladd
 // #include "glue.h"
 import "C"
 
