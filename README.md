@@ -11,8 +11,10 @@ Just type `make` to build on Arch Linux.
 
 ## What happens?
 
-It build, but the resulting executables does not work.
+It builds, but when running I get:
 
-I don't know why, yet.
+`./zigandgotest: error while loading shared libraries: /usr/lib/libc.so: invalid ELF header`
 
-WIP
+Why? I don't know, yet.
+
+Work in progress.
