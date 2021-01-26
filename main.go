@@ -10,11 +10,11 @@ import (
 )
 
 func main() {
-	fmt.Print("Hello ")
+	fmt.Println("Hello from Go")
 	cstrFormat := C.CString("%s\n")
 	defer C.free(unsafe.Pointer(cstrFormat))
-	cstrArg := C.CString("Crustaceans")
+	cstrArg := C.CString("Hello from C")
 	defer C.free(unsafe.Pointer(cstrArg))
 	C.myprint(cstrFormat, cstrArg)
-	fmt.Println("42: ", C.add(40, 2))
+	fmt.Println("40 + 2 == ", C.add(40, 2))
 }

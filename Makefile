@@ -11,7 +11,6 @@ lib/libadd.so: add.zig
 clean:
 	rm -rf zigandgotest zig-cache lib/*.so
 
-run: export LD_LIBRARY_PATH=lib
 run: zigandgotest
 	@ldd zigandgotest
-	@./zigandgotest || echo 'make run works when running go build first'
+	@./run.sh # this works after running "go build"
